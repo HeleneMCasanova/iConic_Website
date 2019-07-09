@@ -1,0 +1,17 @@
+#shape_styles {
+    height:75vh;
+    width:100vw;
+    position: absolute;
+    background-color: #F5F1F2;
+    animation: grow 3s both;
+}
+
+@keyframes grow {
+    from {
+        clip-path: polygon(0% 100%, 0 0%, 0% 100%);
+    }
+
+    to {
+        clip-path: polygon(0% 100%, 0 0%, 80% 100%);
+    }
+}

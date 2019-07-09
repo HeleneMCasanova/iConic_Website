@@ -1,0 +1,61 @@
+#home_background_area {
+    width: 100vw;
+    height: 240vh;
+    padding:5vw;
+    background-color: #4b6777;
+    
+}
+
+#top_area {
+    width: 80vw;
+    height: 75vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    margin-right: 5vw;
+    background-color: #c1432e;
+    color:white;
+}
+
+.main_area_text_overlay {
+    height:75vh;
+    width:100vw;
+    shape-outside: polygon(0% 100%, 0 0%, 80% 100%); 
+    margin-right: 2em;
+    float:left;
+}
+
+#card_area {
+    margin-top:40%;
+}
+
+.card_container {
+    float: left;
+    width:25vw;
+    margin-bottom:2%;
+}
+
+.how_to_steps {
+    float: left;
+    margin-top: 2%;
+    margin-bottom:2%;
+    border-radius:50%;
+    width: 20vw;
+    height: 20vw;
+    background-color: #c1432e;
+}
+
+#animateIcon {
+    animation: showIcon 5s both;
+}
+
+@keyframes showIcon {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+        scale:0.9
+    }
+}

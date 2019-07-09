@@ -1,0 +1,20 @@
+#main_about_area {
+    width: 90vw;
+    margin-left:1vw;
+    margin-top:5vh;
+}
+
+.about_card_styles {
+    width: 28vw;
+    float:left;
+    margin-bottom: 2%;
+    margin-right: 2vw;
+}
+
+#about_background_area {
+    width: 100vw;
+    height: 140vh;
+    padding:5vw;
+    background-color: #4b6777;
+    
+}
