@@ -19,8 +19,10 @@ class Home extends Component {
                         <div className = "main_area_text_overlay">
                             <Triangle/>
                         </div>
-                        <div>
-                            <p>Elementum tempus egestas sed sed. Maecenas sed enim ut sem viverra aliquet eget sit amet. Lacus suspendisse faucibus interdum posuere lorem ipsum. Dui sapien eget mi proin sed libero. Accumsan tortor posuere ac ut consequat semper viverra nam. Eu turpis egestas pretium aenean pharetra magna ac. Sed ullamcorper morbi tincidunt ornare massa. Egestas sed tempus urna et pharetra pharetra massa. Consectetur adipiscing elit duis tristique. Ultricies mi quis hendrerit dolor magna eget. Vitae et leo duis ut diam quam. Ornare massa eget egestas purus viverra accumsan in nisl. Purus sit amet volutpat consequat mauris nunc congue. Bibendum arcu vitae elementum curabitur vitae nunc. Nascetur ridiculus mus mauris vitae ultricies leo. Consequat id porta nibh venenatis.</p>
+                        <div id = "top_text">
+
+                            <p>"We are a group of engineers and computer scientists who want to change the machine learning game by making datasets more accessible and easier to recieve the data you need to train you model."</p>
+                            
                         </div>
                     </div>
 
@@ -31,13 +33,13 @@ class Home extends Component {
                             </Zoom>
                         </div>
 
-                        <div style = {{marginLeft:'13vw', backgroundColor:'#2c2c2c', textAlign:'center'}} className = "how_to_steps">
+                        <div style = {{marginLeft:'13vw', backgroundColor:'#01406C', textAlign:'center'}} className = "how_to_steps">
                             <Zoom>
                                 <FontAwesomeIcon icon={faUserEdit} style = {{marginTop:'30%', fontSize: '8vw'}}/>
                             </Zoom>
                         </div>
 
-                        <div style = {{marginLeft:'13vw', backgroundColor:'#ce9e62', textAlign: 'center'}} className = "how_to_steps">
+                        <div style = {{marginLeft:'13vw', backgroundColor:'#FF7B0F', textAlign: 'center'}} className = "how_to_steps">
                             <Zoom>
                                 <FontAwesomeIcon icon={faDatabase} style = {{marginTop:'30%', fontSize: '8vw'}}/>   
                             </Zoom>                         
@@ -46,31 +48,40 @@ class Home extends Component {
 
                     <div id = "card_area">
                         <div style = {{marginLeft: '6vw'}} className = "card_container">
-                            <Card>
+                            <Card style = {{backgroundColor: '#B9EAEB'}}>
                                 <Card.Body>
-                                    <Card.Title>This is the title</Card.Title>
+                                    <Card.Title className = "card_title">Search</Card.Title>
 
-                                    <Card.Text>Elementum tempus egestas sed sed. Maecenas sed enim ut sem viverra aliquet eget sit amet. Lacus suspendisse faucibus interdum posuere lorem ipsum. Dui sapien eget mi proin sed libero. Accumsan tortor posuere ac ut consequat semper viverra nam. Eu turpis egestas pretium aenean pharetra magna ac. Sed ullamcorper morbi tincidunt ornare massa. Egestas sed tempus urna et pharetra pharetra massa.</Card.Text>
+                                    <Card.Text>
+                                        <p>First, check our database <a href = "#">here</a> to see if the database you're looking for already exists.</p>
+
+                                        <p>If it does, request it and we will send you an email with a link to download the dataset and instructions on how to extract the images.</p>
+                                    </Card.Text>
                                 </Card.Body>
                             </Card>
                         </div>
 
                         <div style = {{marginLeft: '6vw'}} className = "card_container">
-                            <Card>
+                            <Card style = {{backgroundColor:'#A2B9C9'}}>
                                 <Card.Body>
-                                    <Card.Title>This is the title</Card.Title>
+                                <Card.Title className = "card_title">Request</Card.Title>
 
-                                    <Card.Text>Elementum tempus egestas sed sed. Maecenas sed enim ut sem viverra aliquet eget sit amet. Lacus suspendisse faucibus interdum posuere lorem ipsum. Dui sapien eget mi proin sed libero. Accumsan tortor posuere ac ut consequat semper viverra nam. Eu turpis egestas pretium aenean pharetra magna ac. Sed ullamcorper morbi tincidunt ornare massa. Egestas sed tempus urna et pharetra pharetra massa.</Card.Text>
+                                    <Card.Text>
+                                        <p>If the dataset you want does not exist, send us a request <a href = "#">here</a>. Please tell us what you want us to search for and an estimated amount of results you want.</p>
+                                    </Card.Text>
                                 </Card.Body>
                             </Card>
                         </div>
 
                         <div style = {{marginLeft: '6vw'}} className = "card_container">
-                            <Card>
+                            <Card style = {{backgroundColor: '#FFCFA7'}}>
                                 <Card.Body>
-                                    <Card.Title>This is the title</Card.Title>
+                                <Card.Title className = "card_title">Run</Card.Title>
+                                    <Card.Text>
+                                        <p>Once we have your request, we will run our scripts across several different websites until we have the maximum amount of result we can obtain.</p>
 
-                                    <Card.Text>Elementum tempus egestas sed sed. Maecenas sed enim ut sem viverra aliquet eget sit amet. Lacus suspendisse faucibus interdum posuere lorem ipsum. Dui sapien eget mi proin sed libero. Accumsan tortor posuere ac ut consequat semper viverra nam. Eu turpis egestas pretium aenean pharetra magna ac. Sed ullamcorper morbi tincidunt ornare massa. Egestas sed tempus urna et pharetra pharetra massa.</Card.Text>
+                                        <p>Click <a href="#">here</a> for more details.</p>
+                                    </Card.Text>
                                 </Card.Body>
                             </Card>
                         </div>

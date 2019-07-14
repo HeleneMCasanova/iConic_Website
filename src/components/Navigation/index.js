@@ -9,19 +9,21 @@ import logo from '../Images/logo.png';
 
 const Navigation = () => (
         <Navbar id = "nav_bar" fixed = "top">
-            <Navbar.Brand>
-                <img src = {logo}
-                width="15%"
-                height="15%"
-                alt=""/>
-                iConic
-            </Navbar.Brand>
             <Navbar.Collapse>
-                <Nav id = "nav_bar_links" className = "ml-auto"  pullright = "true">
+                <Nav className = "nav_bar_links"  pullright = "true">
                     <Nav.Link><Link to={ROUTES.HOME}>Home</Link></Nav.Link>
                     <Nav.Link><Link to={ROUTES.ABOUT}>Our Team</Link></Nav.Link>
-                    <Nav.Link><Link to={ROUTES.CONTACT}>Contact Us</Link></Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+
+            <Navbar.Brand style = {{textAlign:'center'}}> iConic </Navbar.Brand>
+            
+            <Navbar.Collapse>
+                <Nav className = "ml-auto nav_bar_links"  pullright = "true">
+                    
+                    <Nav.Link><Link to={ROUTES.SERVICES}>Services</Link></Nav.Link>
                     <Nav.Link><Link to={ROUTES.SEARCH}>Search</Link></Nav.Link>
+                    <Nav.Link><Link to={ROUTES.CONTACT}>Contact Us</Link></Nav.Link>
 
                 </Nav>
             </Navbar.Collapse>

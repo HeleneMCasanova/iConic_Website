@@ -1,0 +1,39 @@
+#services_container {
+    margin-top:30%;
+}
+
+.card_container_s {
+    float: left;
+    width:60vw;
+    margin-bottom:2%;
+    color:black;
+}
+
+.how_to_steps_s {
+    float: left;
+    border-radius:50%;
+    width: 20vw;
+    height: 20vw;
+    background-color: #01B4B9;
+}
+
+#animateIcon_s {
+    animation: showIcon 5s both;
+}
+
+@keyframes showIcon {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+        scale:0.9
+    }
+}
+
+.card_title_s {
+    font-family: 'Raleway';
+    text-align: center;
+}

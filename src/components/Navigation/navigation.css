@@ -1,9 +1,10 @@
 #nav_bar {
     width:100vw;
     top:0;
-    background-color: #F5F1F2;
+    background-color: white;
 }
 
-#nav_bar_links a {
+
+.nav_bar_links a {
     color:black;
 }

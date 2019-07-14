@@ -1,31 +1,43 @@
+@font-face {
+    font-family:'Raleway';
+    src: url(../Assets/Raleway-Light.ttf);
+}
+
 #home_background_area {
     width: 100vw;
     height: 240vh;
     padding:5vw;
-    background-color: #4b6777;
+    background-color: white;
     
 }
 
 #top_area {
-    width: 80vw;
+    width: 100vw;
     height: 75vh;
-    margin-left: 10vw;
+    left:0;
     margin-top: 10vh;
-    margin-right: 5vw;
-    background-color: #c1432e;
+    right: 0;
+    background-color: #01406C;
     color:white;
+}
+
+#top_text {
+    font-family: 'Raleway';
+    font-size:1.3em;
+    margin-right:2%;
+    
 }
 
 .main_area_text_overlay {
     height:75vh;
     width:100vw;
-    shape-outside: polygon(0% 100%, 0 0%, 80% 100%); 
+    shape-outside: polygon(50% 0, 50% 100%, 0 100%, 0 0);
     margin-right: 2em;
     float:left;
 }
 
 #card_area {
-    margin-top:40%;
+    margin-top:20%;
 }
 
 .card_container {
@@ -36,12 +48,12 @@
 
 .how_to_steps {
     float: left;
-    margin-top: 2%;
+    margin-top: -5%;
     margin-bottom:2%;
     border-radius:50%;
     width: 20vw;
     height: 20vw;
-    background-color: #c1432e;
+    background-color: #01B4B9;
 }
 
 #animateIcon {
@@ -58,4 +70,9 @@
         opacity: 1;
         scale:0.9
     }
+}
+
+.card_title {
+    font-family: 'Raleway';
+    text-align: center;
 }
