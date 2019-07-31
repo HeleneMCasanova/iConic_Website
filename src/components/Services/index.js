@@ -6,35 +6,39 @@ import Zoom from 'react-reveal/Zoom';
 import { faList } from '@fortawesome/free-solid-svg-icons/faList';
 import { faUserEdit } from '@fortawesome/free-solid-svg-icons/faUserEdit';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons/faDatabase';
+
 import './services.css';
 
 
 class Services extends Component {
 
-    render = () => {
+    render () {
         return (
+            <div>
             <div id = "services_container">
-                <div style = {{color:'white', marginTop:'8%'}}>
-                    <div style = {{marginLeft:'6vw', textAlign:'center'}} className = "how_to_steps_s">
-                        <Zoom>
-                            <FontAwesomeIcon icon={faList} style = {{marginTop:'30%', fontSize: '8vw'}}/>
-                        </Zoom>
+                <div id = "one">
+                    <div style = {{color:'white', marginTop:'8%'}}>
+                        <div style = {{marginLeft:'6vw', textAlign:'center'}} className = "how_to_steps_s">
+                            <Zoom>
+                                <FontAwesomeIcon icon={faList} style = {{marginTop:'30%', fontSize: '8vw'}}/>
+                            </Zoom>
+                        </div>
                     </div>
+                        <div style = {{marginLeft: '6vw'}} className = "card_container_s">
+                            <Card style = {{backgroundColor: '#B9EAEB'}}>
+                                <Card.Body>
+                                    <Card.Title className = "card_title_s">Search</Card.Title>
 
-                    <div style = {{marginLeft: '6vw'}} className = "card_container_s">
-                        <Card style = {{backgroundColor: '#B9EAEB'}}>
-                            <Card.Body>
-                                <Card.Title className = "card_title_s">Search</Card.Title>
+                                    <Card.Text>
+                                        <p>First, check our database <a href = "#">here</a> to see if the database you're looking for already exists.</p>
 
-                                <Card.Text>
-                                    <p>First, check our database <a href = "#">here</a> to see if the database you're looking for already exists.</p>
-
-                                    <p>If it does, request it and we will send you an email with a link to download the dataset and instructions on how to extract the images.</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                                        <p>If it does, request it and we will send you an email with a link to download the dataset and instructions on how to extract the images.</p>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </div>
                     </div>
-
+                <div id = "two">
                     <div style = {{marginLeft:'6vw', backgroundColor:'#01406C', textAlign:'center'}} className = "how_to_steps_s">
                         <Zoom>
                             <FontAwesomeIcon icon={faUserEdit} style = {{marginTop:'30%', fontSize: '8vw'}}/>
@@ -52,6 +56,8 @@ class Services extends Component {
                                 </Card.Body>
                             </Card>
                         </div>
+                    </div>
+                    <div>
 
                         <div style = {{marginLeft:'6vw', backgroundColor:'#FF7B0F', textAlign: 'center'}} className = "how_to_steps_s">
                             <Zoom>
@@ -70,6 +76,7 @@ class Services extends Component {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
+                        </div>
                         </div>
                     </div>
                 </div>

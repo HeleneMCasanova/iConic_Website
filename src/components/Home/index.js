@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Zoom from 'react-reveal/Zoom';
+import { Link } from 'react-router-dom';
 
 import Triangle from '../Shapes/Triangle';
 import { faList } from '@fortawesome/free-solid-svg-icons/faList';
 import { faUserEdit } from '@fortawesome/free-solid-svg-icons/faUserEdit';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons/faDatabase';
 import './home.css';
+import * as ROUTES from '../../constants/routes';
 
 class Home extends Component {
 
@@ -53,7 +55,7 @@ class Home extends Component {
                                     <Card.Title className = "card_title">Search</Card.Title>
 
                                     <Card.Text>
-                                        <p>First, check our database <a href = "#">here</a> to see if the database you're looking for already exists.</p>
+                                        <p>First, check our database <Link to={ROUTES.SEARCH}>here</Link> to see if the database you're looking for already exists.</p>
 
                                         <p>If it does, request it and we will send you an email with a link to download the dataset and instructions on how to extract the images.</p>
                                     </Card.Text>
@@ -67,7 +69,7 @@ class Home extends Component {
                                 <Card.Title className = "card_title">Request</Card.Title>
 
                                     <Card.Text>
-                                        <p>If the dataset you want does not exist, send us a request <a href = "#">here</a>. Please tell us what you want us to search for and an estimated amount of results you want.</p>
+                                        <p>If the dataset you want does not exist, send us a request <Link to={ROUTES.CONTACT}>here</Link>. Please tell us what you want us to search for and an estimated amount of results you want.</p>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -80,7 +82,7 @@ class Home extends Component {
                                     <Card.Text>
                                         <p>Once we have your request, we will run our scripts across several different websites until we have the maximum amount of result we can obtain.</p>
 
-                                        <p>Click <a href="#">here</a> for more details.</p>
+                                        <p>Click <Link to={ROUTES.SERVICES}>here</Link> for more details.</p>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

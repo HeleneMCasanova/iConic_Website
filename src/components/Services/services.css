@@ -1,11 +1,13 @@
 #services_container {
-    margin-top:30%;
+    margin-top:2vh;
+    width:100%;
+    min-height:160vh;
 }
 
 .card_container_s {
     float: left;
-    width:60vw;
-    margin-bottom:2%;
+    width:50vw;
+    margin-top:3%;
     color:black;
 }
 
@@ -15,6 +17,7 @@
     width: 20vw;
     height: 20vw;
     background-color: #01B4B9;
+    color:white;
 }
 
 #animateIcon_s {
@@ -36,4 +39,16 @@
 .card_title_s {
     font-family: 'Raleway';
     text-align: center;
+}
+
+#one {
+    width:100%;
+    float: left;
+    margin-bottom:2%;
+}
+
+#two {
+    width:100%;
+    float: left;
+    margin-bottom:2%;
 }

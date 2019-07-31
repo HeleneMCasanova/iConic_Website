@@ -3,6 +3,7 @@
     width:100vw;
     position: absolute;
     background-image: url('../Images/place.jpg');
+    background-size: 100% 200%;
     animation: grow 3s both;
 }
 

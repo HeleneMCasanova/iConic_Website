@@ -1,5 +1,14 @@
 #search_term_group {
-    margin-top:15%;
-    margin-left:15%;
-    width:40vw;
+    margin-top:10%;
+    margin-left:5%;
+    width:90vw;
+}
+
+#table_content {
+    margin-left:5%;
+    width:90vw;
+}
+
+#search_container {
+    height:100vh;
 }
